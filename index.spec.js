@@ -29,7 +29,7 @@ test("Returns expected outputs (non-EN)", () => {
     expect(getNumberOfOccurrencesOfNonnumericalCharsInString("ккккрасиваяяяяяяяя mirrora")).toBe("к4р1а2с1и1в1я8m1i1r3o1a1");
 });
 
-test("Returns backslack and single quotes count", () => {
+test("Returns escaped characters count", () => {
     expect(getNumberOfOccurrencesOfNonnumericalCharsInString('\\\\\'\'')).toBe('\\2\'2');
 });
 
