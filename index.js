@@ -1,7 +1,7 @@
 var _ = require('underscore');
 function getNumberOfOccurrencesOfNonnumericalCharsInString(inputString){
     if (inputString === null) {
-        throw new Error('The input cannot be empty string, whitespace only or null!');
+        throw new Error('The input cannot be null!');
     }
     var trimmedInput = inputString.replace(/\s+|\d+/g, '');
     if (trimmedInput === "") {
